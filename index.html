@@ -31,6 +31,20 @@ hitApi('https://josemamira.github.io/post/edificios.json', function(error, data)
     console.log('there was an error', error);
   } else {
     console.log('data is', data);
+    console.log('edificio es', data.features[0].properties.name);
+    
+    // forEach
+    data.features.forEach(obj => {
+        Object.entries(obj).forEach(([key, value]) => {           
+           console.log(`${key} ${value}`);          
+        });
+        console.log('-------------------');
+    });    
+    // fin forEach
+    
+    
+    
+    
   }
 });    
 </script>
