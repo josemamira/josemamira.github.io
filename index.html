@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 </style>
-<script src=""></script>
+<script src="js/client.js"></script>
 <body>
   
 <!-- Navigation (Stays on Top) -->
@@ -20,9 +20,21 @@
 
 <div class="w3-container w3-center w3-teal">
   <h1>Blog personal de José Manuel Mira Martínez</h1>
-  <p>Asuntos de interés: Geomática, gis libre, Linux y programación en general.</p>
- 
+  <p>Asuntos de interés: Geomática, gis libre, Linux y programación en general.</p> 
 </div>
 
+<div>
+  <p>Edificios</p>
+<script>
+hitApi('https://josemamira/josemamira.github.io/post/edificios.json', function(error, data) {
+  if (error) {
+    console.log('there was an error', error);
+  } else {
+    console.log('data is', data);
+  }
+});    
+</script>
+</div>
+  
 </body>
 </html>
