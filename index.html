@@ -24,7 +24,8 @@
 </div>
 
 <div>
-  <p>Edificios</p>
+  <p id="edificios"></p>
+  <ul id="lista"></ul>
 <script>
 hitApi('https://josemamira.github.io/post/edificios.json', function(error, data) {
   if (error) {
@@ -32,21 +33,34 @@ hitApi('https://josemamira.github.io/post/edificios.json', function(error, data)
   } else {
     console.log('data is', data);
     console.log('edificio es', data.features[0].properties.name);
+    console.log(data.features.length)
+    console.log(data.features[0])
     
-    // forEach
-    data.features.forEach(obj => {
-        Object.entries(obj).forEach(([key, value]) => {           
-           console.log(`${key} ${value}`);          
-        });
-        console.log('-------------------');
-    });    
-    // fin forEach
+    // metodo 1
+    let text = "";
+    data.features.forEach(myFunction);
+    document.getElementById("edificios").innerHTML = text;
+    function myFunction(item, index) {  
+        text += index + ": " + item.properties.edificio + ' - ' +  item.properties.name + "<br>"; 
+    }
     
     
-    
-    
+    // metodo 2
+    let i = 0;
+    while (i < data.features.length) {
+        texto = data.features[i].properties.edificio + ' - ' + data.features[i].properties.name;
+        //document.getElementById('lista').innerHTML = data.features[i].properties.edificio + ' - ' + data.features[i].properties.name;
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(texto));
+        document.getElementById('lista').appendChild(li);
+        
+        
+        console.log(  data.features[i].properties.edificio + ' - ' + data.features[i].properties.name);
+        i++;
+    }
+
   }
-});    
+});
 </script>
 </div>
   
