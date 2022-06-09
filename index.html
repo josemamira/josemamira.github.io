@@ -1,68 +1,531 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
-<title>José Manuel Mira Martínez personal page</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src='js/jquery-3.6.0.min.js'></script>
 <style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<script src="js/client.js"></script>
-<body>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Jos&eacute; Manuel Mira</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="img/geobanner.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        
+        
+        <div class="w3-row">
+			<div class="w3-col m8 s12">
+				<p><button class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('expandTextHead').style.display='block'"><b>LEER M&Aacute;S &raquo;</b></button></p>
+			</div>
+			<div id="expandTextHead" class="w3-panel w3-display-container" style="display: none;">
+				<span onclick="this.parentElement.style.display='none'"  class="w3-button w3-red w3-display-topright">x</span>
+				<!-- Ejemplo HTML -->
+				<h1>TEXTO_LARGO</h1>
+				<p><a href="https://es.lipsum.com/">Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+				<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+			</div> 
+		</div>  
+
+    </div>
+  </div>
+  <hr>
+
+
+
+
+  <!-- divBlogUltimo-->
+	<div id="divBlogUltimo"></div>
+	<hr>
+<!-- END divBlogUltimo -->
+
+  <!-- divUnPost-->
+	<div id="divUnPost"></div>
+	<hr>
+<!-- END divUnPost -->
+
+
+
+
+
+  <!-- divBotonPosts listado 5 posts-->
+	<div id="divBotonPosts"></div>
+	<hr>
+<!-- END v -->
+
+
+  <!-- Posts -->
+  <div id="popularPosts">
+	  <div class="w3-card-4 w3-margin w3-white">
+		<div class="w3-container w3-padding">
+		  <h4>Popular Posts</h4>
+		</div>
+		<ul class="w3-ul w3-hoverable w3-white">
+		  <li class="w3-padding-16">
+			<img src="img/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+			<span class="w3-large">Lorem</span><br>
+			<span>Sed mattis nunc</span>
+		  </li>
+		  <li class="w3-padding-16">
+			<img src="img/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+			<span class="w3-large">Ipsum</span><br>
+			<span>Praes tinci sed</span>
+		  </li> 
+		  <li class="w3-padding-16">
+			<img src="img/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+			<span class="w3-large">Dorum</span><br>
+			<span>Ultricies congue</span>
+		  </li>   
+		  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+			<img src="img/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+			<span class="w3-large">Mingsum</span><br>
+			<span>Lorem ipsum dipsum</span>
+		  </li>  
+		</ul>
+	  </div>
+	  <hr> 
+  </div>
+
+
+
+
+  <!-- Blog entry template-->
+<!--
+<div class="w3-card-4 w3-margin w3-white">
+	<img src="img/theme/1.jpg" alt="Theme" style="width:100%">
+	<div class="w3-container">
+		<h3><b>POST TITLE</b></h3>
+		<h5>THEME, <span class="w3-opacity">DATE EX. April 2, 2014</span></h5>
+	</div>	
+	<div class="w3-container" >
+		<p>SHORT TEXT</p>
+		<div class="w3-row">
+			<div class="w3-col m8 s12">
+				<p><button onclick="document.getElementById('blogLeerMas').style.display = 'block';" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p>
+			</div>
+			<div class="w3-col m4 w3-hide-small">
+				<p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-badge">2</span></span></p> 
+			</div>
+			<div class="w3-container" id="blogLeerMas" style="display: none;">
+				TEXTO_LARGO
+			</div> 
+		</div>
+	</div>
+</div>
+<hr>
+-->
+<!-- END BLOG ENTRIES -->
+
+<!--
+
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="img/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOG ENTRY TEST</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+		<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <div class="w3-row">
+			<div class="w3-col m8 s12">
+				<p><button class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('expandText').style.display='block'"><b>LEER M&Aacute;S &raquo;</b></button></p>
+			</div>
+			<div id="expandText" class="w3-panel w3-display-container" style="display: none;">
+				<span onclick="this.parentElement.style.display='none'"  class="w3-button w3-red w3-display-topright">x</span>
+				
+				<h1>TEXTO_LARGO</h1>
+				<p><a href="https://es.lipsum.com/">Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+				<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+			</div> 
+		</div>
+	</div>
+  </div>-->
+<!-- END BLOG ENTRIES -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="img/avatar.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+    </div>
+  </div><hr>
   
-<!-- Navigation (Stays on Top) -->
-<div class="w3-top w3-bar w3-black">
-<a href="#home" class="w3-bar-item w3-button">Home</a>
-<a href="#about" class="w3-bar-item w3-button">About</a>
-<a href="#blog" class="w3-bar-item w3-button">Blog</a>
-<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="img/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="img/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="img/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="img/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
 </div>
-<img src="img/geobanner.png" alt="banner J3M" style="width:100%">
 
-<div class="w3-container w3-center w3-teal">
-  <h1>Blog personal de José Manuel Mira Martínez</h1>
-  <p>Asuntos de interés: Geomática, gis libre, Linux y programación en general.</p> 
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
 </div>
 
-<div>
-  <p id="edificios"></p>
-  <ul id="lista"></ul>
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-bottom">
+	<div id="paginador"></div>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Develop by <a href="https://josemamira.github.io/" target="_blank">Jos&eacute; Manuel Mira</a></p>
+</footer>
+
+
 <script>
-hitApi('https://josemamira.github.io/post/edificios.json', function(error, data) {
-  if (error) {
-    console.log('there was an error', error);
-  } else {
-    console.log('data is', data);
-    console.log('edificio es', data.features[0].properties.name);
-    console.log(data.features.length)
-    console.log(data.features[0])
-    
-    // metodo 1
-    let text = "";
-    data.features.forEach(myFunction);
-    document.getElementById("edificios").innerHTML = text;
-    function myFunction(item, index) {  
-        text += index + ": " + item.properties.edificio + ' - ' +  item.properties.name + "<br>"; 
-    }
-    
-    
-    // metodo 2
-    let i = 0;
-    while (i < data.features.length) {
-        texto = data.features[i].properties.edificio + ' - ' + data.features[i].properties.name;
-        //document.getElementById('lista').innerHTML = data.features[i].properties.edificio + ' - ' + data.features[i].properties.name;
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(texto));
-        document.getElementById('lista').appendChild(li);
-        
-        
-        console.log(  data.features[i].properties.edificio + ' - ' + data.features[i].properties.name);
-        i++;
-    }
 
-  }
-});
+	// hacer global la peticion ajax en variable myData
+	// myData es un array de objetos.
+	var url = 'https://localhost/kk/posts.json';
+
+    var myData = getSomething();
+
+    function getSomething(){
+        var result = null;
+        $.ajax({
+            async: false,
+            url: url,
+            data: {},
+            dataType: "json",
+            success: function(data){
+                result = data.posts;
+            }
+        });
+        return result;
+    }
+    
+    // Decomentar para test
+    //console.log(myData);
+
+// vaciamos la lista de post
+document.getElementById("popularPosts").style.display = "none";
+// listado temas
+const themeArr = ["Programación", "Deportes", "Variado","Música", "SIG","Cartografía", "Otros"];
+
+// Analizar la URL para obtener enlace a un artículo
+//comprueba si hay una url con el codigo del tipo http://localhost/index.html?id=3
+var laURL = window.location.href;
+var patron = /id=/i;
+var res = laURL.match(patron);
+if (res == "id=") {
+	var id_art = window.location.href.split( '?id=' )[1];
+	//alert('con id');
+	loadPost(id_art);
+	lastPost();
+	
+} else {
+	//alert('sin id');
+	lastPost();
+	
+}	
+makePagination();
+
+
+
+
+function makePagination() {
+	    var divisor = 5;
+
+		//console.log(myData);
+		const numPost = myData.length;
+		console.log("nº: "+ numPost);
+		const numBot =numPost / divisor; // nº botones
+		//console.log(numBot);
+		const resto = numPost % divisor; //console.log('resto es ' + resto);		
+		var bFin='';
+		var paginador='';
+		var paginas = '';
+		var filtrado =[];
+		
+		if (numPost <= divisor) {
+			//console.log('hay menos o igual a divisor (5)');
+			
+			for (var i = 1; i <= numPost; i++) {				
+				paginas += '<a  href="index.html?id='+i+'">'+i+'</a>';											
+			}
+			paginador = '<div class="pagination">'+paginas+'</div>';
+			
+			
+		}
+		else {
+			//console.log('hay más de divisor(5). Paginar');
+			var bFin=''; 
+			if (resto < 0) {
+				//console.log('justo');
+				bFin=''; 
+			} else {
+				//console.log('sobran:  '+ resto);
+				numIni =  Math.floor(numBot)*divisor;
+				numFin = numIni + resto;
+				const filtrado = myData.filter(post => post.id >= numIni ).filter(post => post.id <= numFin );
+				bFin = '<button class="w3-button w3-light-grey w3-border w3-hover-red" onClick="listadoBoton('+numIni+','+numFin+')" >'+numIni+'-'+numFin+'</button>'; 
+
+			}
+			
+			var paginas = '';
+			for (var i = 1; i < numBot; i++) {
+				numIni = ((divisor*i)-divisor)+1;
+				numFin = divisor * i;
+				
+				// para cada boton pasamos una función con su inicio y fin
+				// filtramos el array para quedarnos con inicio y fin
+				filtrado = myData.filter(post => post.id >= numIni ).filter(post => post.id <= numFin );
+				paginas += '<button class="w3-button w3-light-grey w3-border w3-hover-red" onclick="listadoBoton('+numIni+','+numFin+')" >'+numIni+'-'+numFin+'</button>';	
+			}				
+			paginador = '<div class="pagination">'+paginas+bFin+'</div>';	
+		}
+		
+		//console.log(paginador);
+		$('#paginador').append(paginador);
+		
+
+		
+}
+
+
+
+
+// Vacia y rellena popularPosts
+function listadoBoton(inicio,fin) {
+	//console.log(' funcion listadoBoton ');
+	//alert("The pagina begin with " + inicio + ", and end with "+ fin);
+	//console.log( myData );
+	var filtrado=[];
+	$( "#popularPosts" ).empty();
+
+	let txt = '<div class="w3-card-4 w3-margin w3-white">'+
+		'<div class="w3-container w3-padding">'+
+		  '<h4>Popular Posts del '+inicio+' al '+fin+'.</h4>'+
+		'</div>'+
+		'<ul class="w3-ul w3-hoverable w3-white">';
+	filtrado = myData.filter(post => post.id >= inicio ).filter(post => post.id <= fin );
+	filtrado.forEach(myFunction);
+
+	function myFunction(obj, index, array) {
+	  //txt += obj.titulo + '<br>';
+	  txt += '<li class="w3-padding-16">'+
+				  '<img src="img/theme/min/'+obj.tema+'.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">'+
+				  '<span class="w3-badge w3-green">'+obj.id+'</span>&nbsp;&nbsp;<span class="w3-large">'+obj.titulo+'</span><br>'+
+				  '<span>  TEM&Aacute;TICA: '+themeArr[obj.tema]+ '  FECHA: '+obj.fecha_publicacion+'</span>'+
+			  '</li>';
+	}
+	//console.log(txt+'</ul></div><hr>');
+	$('#popularPosts').append(txt);
+	document.getElementById('popularPosts').style.display='block';
+	
+
+}
+/*
+	function loadPost(id) {	
+		//id = 1;	
+			// obtener nº de posts (length)
+			const numPost = myData.length;
+			//console.log(numPost);
+			const obj = myData[id-1];
+			//const str = JSON.stringify(data);
+			//console.log(obj); 
+			//console.log(obj.titulo); 
+			//console.log(obj.tema);
+			const themeArr = ["Programación", "Deportes", "Variado","Música", "SIG","Cartografía", "Otros"];
+						
+			var divBlog = '';
+			divBlog += '<div class="w3-card-4 w3-margin w3-white">'+
+					'<img src="img/theme/'+obj.tema+'.jpg" alt="Theme" style="width:100%">'+
+					'<div class="w3-container">'+
+						'<h3><b>'+obj.titulo+'</b></h3>'+
+						'<h5>TEM&Aacute;TICA: '+themeArr[obj.tema]+', <span class="w3-opacity">DATE '+obj.fecha_articulo+'</span></h5>'+
+					'</div>	'+
+					'<div class="w3-container">'+
+						'<p>'+obj.texto_corto+'</p>'+
+						'<div class="w3-row">'+						
+						
+						   '<div class="w3-col m8 s12">'+
+							  '<p><button class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById(\'expandText'+id+'\').style.display=\'block\'"><b>LEER M&Aacute;S &raquo;</b></button></p>'+
+							'</div>'+
+							'<div id="expandText'+id+'" class="w3-panel w3-display-container" style="display: none;">'+
+								'<span onclick="this.parentElement.style.display=\'none\'"  class="w3-button w3-red w3-display-topright">x</span>'+
+								 obj.texto_largo +
+							'</div>'+	
+												
+						'</div>'+
+					'</div>'+
+				'</div>';
+
+			$('#divBlogUltimo').append(divBlog);
+			document.getElementById('divUnPost').style.display='block';
+
+	}	
+*/	
+	function loadPost(id) {	
+		//id = 1;	
+		var url = 'https://localhost/kk/posts.json';
+		$( "#divUnPost" ).empty();
+		$.getJSON(url, function(data) {
+			console.log(data);
+			// obtener nº de posts (length)
+			const numPost = Object.keys(data.posts).length;
+			console.log(numPost);
+			const obj = data.posts[id-1];
+			//const str = JSON.stringify(data);
+			//console.log(obj); 
+			//console.log(obj.titulo); 
+			//console.log(obj.tema);
+						
+			var divBlog = '';
+			divBlog += '<div class="w3-card-4 w3-margin w3-white">'+
+					'<img src="img/theme/'+obj.tema+'.jpg" alt="Theme" style="width:100%">'+
+					'<div class="w3-container">'+
+						'<h3><b>'+obj.titulo+'</b></h3>'+
+						'<h5>TEM&Aacute;TICA: '+themeArr[obj.tema]+', <span class="w3-opacity">DATE '+obj.fecha_articulo+'</span></h5>'+
+					'</div>	'+
+					'<div class="w3-container">'+
+						'<p>'+obj.texto_corto+'</p>'+
+						'<div class="w3-row">'+						
+						
+						   '<div class="w3-col m8 s12">'+
+							  '<p><button class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById(\'expandText'+id+'\').style.display=\'block\'"><b>LEER M&Aacute;S &raquo;</b></button></p>'+
+							'</div>'+
+							'<div id="expandText'+id+'" class="w3-panel w3-display-container" style="display: none;">'+
+								'<span onclick="this.parentElement.style.display=\'none\'"  class="w3-button w3-red w3-display-topright">x</span>'+
+								 obj.texto_largo +
+							'</div>'+	
+												
+						'</div>'+
+					'</div>'+
+				'</div>';
+
+			$('#divBlogUltimo').append(divBlog);
+			document.getElementById('divUnPost').style.display='block';
+		});
+	}
+
+
+	function lastPost() {	
+		var url = 'https://localhost/kk/posts.json';
+		$( "#divBlogUltimo" ).empty();
+		$.getJSON(url, function(data) {
+			const numPost = Object.keys(data.posts).length;
+			const obj = data.posts[numPost-1];
+			//console.log(obj.tema);
+			id = numPost-1;		
+			var divBlog = '';
+			divBlog += '<div class="w3-card-4 w3-margin w3-white">'+
+					'<img src="img/theme/'+obj.tema+'.jpg" alt="Theme" style="width:100%">'+
+					'<div class="w3-container">'+
+						'<h3><b>'+obj.titulo+'</b></h3>'+
+						'<h5>TEM&Aacute;TICA: '+themeArr[obj.tema]+', <span class="w3-opacity">DATE '+obj.fecha_articulo+'</span></h5>'+
+					'</div>	'+
+					'<div class="w3-container">'+
+						'<p>'+obj.texto_corto+'</p>'+
+						'<div class="w3-row">'+
+						   '<div class="w3-col m8 s12">'+
+							  '<p><button class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById(\'expandText'+id+'\').style.display=\'block\'"><b>LEER M&Aacute;S &raquo;</b></button></p>'+
+							'</div>'+
+							'<div id="expandText'+id+'" class="w3-panel w3-display-container" style="display: none;">'+
+								'<span onclick="this.parentElement.style.display=\'none\'"  class="w3-button w3-red w3-display-topright">x</span>'+
+								 obj.texto_largo +
+							'</div>'+
+						'</div>'+
+					'</div>'+
+				'</div>';
+			//});
+			$('#divBlogUltimo').append(divBlog);
+			document.getElementById('divBlogUltimo').style.display='block';
+		});
+	}
+
+$(document).ready(function(){
+	//lastPost();
+});			
 </script>
-</div>
-  
+
 </body>
 </html>
