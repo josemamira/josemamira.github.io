@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Blog de José Manuel Mira</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -264,7 +264,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 	// hacer global la peticion ajax en variable myData
 	// myData es un array de objetos.
-	var url = 'https://localhost/kk/posts.json';
+	var url = 'https://josemamira.github.io/post/posts.json';
 
     var myData = getSomething();
 
@@ -446,7 +446,7 @@ function listadoBoton(inicio,fin) {
 */	
 	function loadPost(id) {	
 		//id = 1;	
-		var url = 'https://localhost/kk/posts.json';
+		var url = 'https://josemamira.github.io/post/posts.json';
 		$( "#divUnPost" ).empty();
 		$.getJSON(url, function(data) {
 			console.log(data);
@@ -489,7 +489,7 @@ function listadoBoton(inicio,fin) {
 
 
 	function lastPost() {	
-		var url = 'https://localhost/kk/posts.json';
+		var url = 'https://josemamira.github.io/post/posts.json';
 		$( "#divBlogUltimo" ).empty();
 		$.getJSON(url, function(data) {
 			const numPost = Object.keys(data.posts).length;
