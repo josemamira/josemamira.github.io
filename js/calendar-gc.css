@@ -10,7 +10,7 @@
   height: max-content;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;/* distancia cabecera mes-año con tabla*/
 }
 
 .gc-calendar .gc-calendar-header button.prev, .gc-calendar .gc-calendar-header button.next {
@@ -24,13 +24,13 @@
   position: relative;
   display: inline-block;
   border: 0;
-  padding: 4px 15px;
+  padding: 1px 15px;
   font-size: 14px; /* botones para pasar mes*/
   box-shadow: inset 0px -1px 0px #EDF2F7;
   cursor: pointer;
   color: #7A7A9D;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 1px;
 }
 
 .gc-calendar .gc-calendar-header button.prev:hover, .gc-calendar .gc-calendar-header button.next:hover {
@@ -44,7 +44,7 @@
 }
 
 .gc-calendar .gc-calendar-header button.prev {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .gc-calendar .gc-calendar-header .gc-calendar-month-year {
@@ -53,13 +53,14 @@
   font-size: 14px; /* fuente año */
   color: #38385c;
   line-height: 136.02%;
-  min-width: 220px;
+  min-width: 120px;
 }
 
 .gc-calendar table.calendar {
   width: 100%;
 }
 
+/* estilo cabecera nombre dias semana */
 .gc-calendar table.calendar th {
   text-align: start;
   font-weight: 600;
@@ -67,13 +68,14 @@
   line-height: 136.02%;
   padding: 2px;
   text-transform: uppercase;
-  color: #7A7A9D;
+  color: navy;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 2px;
+  /*background: LightCyan;*/
 }
 
 .gc-calendar table.calendar td {
-  height: 20px; /* altura celda dia. default 150 */
+  height: 15px; /* altura celda dia. default 150 */
   position: relative;
   padding-top: 3px;
   vertical-align: top;
@@ -84,14 +86,34 @@
   color: #B5B5BD
 }
 
+/* celdas dia que no tienen eventos */
 .gc-calendar table.calendar td .day-number {
   font-size: 9px; /* fuente nº dia mes del 1 al 30 */
   font-weight: 800;
   line-height: 38.09px;
   overflow-y: auto;
-  color: #38385c;
+  color: navy; /* color borde */
+  /*background-color: beige;*/ /* color fondo celdas dia  */
   text-decoration: none;
   display: block;
+  border: 1px solid; /* ancho borde de celda dias */
+  text-align: center;
+  /*width: 20px;*/
+  
+  /* estilo numero con circulo */
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        padding: 4px;
+        background: #fff;
+        border: 1px solid silver;
+        color: #000;
+        text-align: center;
+        vertical-align: baseline;
+        font: 10px Arial, sans-serif;
+  
+  
+  
 }
 
 .gc-calendar table.calendar td .today .day-number {
@@ -104,40 +126,36 @@
 }
 
 .gc-calendar table.calendar a:hover {
-  background-color: #4C6FFF;
-  width: 90%;
+  background-color: ivory; /* color de fondo en hover sobre el nº dia */
+  /*width: 90%;
   border-radius: 5px;
-  padding-left: 10px;
+  padding-left: 10px;*/
   transition: .2s;
 }
 
+/* estilo aplicado al nº  dia en hover */
 .gc-calendar table.calendar a:hover .day-number {
-  color: #fff;
+  color: red;
+  font-weight: bold;
 }
 
 .gc-calendar table.calendar th::before, .gc-calendar table.calendar tr:not(:last-child) td::before {
-  content: "";
-  display: block;
-  width: 45%; /* ancho celda. Por defecto 90%*/ 
-  height: 2px;
-  border-radius: 1px;
-  background-color: #8f8f93;
-  bottom: 0px;
-  left: 0;
-  position: absolute;
+
 }
 
 .gc-calendar table.calendar td:hover {
-  background: linear-gradient(90deg, #E1E8FF 90%, transparent 50%);
-  padding-left: 10px;
-  padding-right: 10px;
+  background: ivory; /* color de fondo on hover sobre dias */
+  padding-left: 1px;
+  padding-right: 1px;
   transition: 0.3s;
+  border: 1px solid;
+  border-color: OldLace; /* color del borde en hover sobre celdas numeros dia */
 }
 
 .gc-calendar .gc-event {
   display: block;
   width: max-content;
-  margin-bottom: 10px;  
+  /*margin-bottom: 10px; */ 
   font-size: 12px; /* fuente del evento */
   /*background-color: yellow;  color fondo del evento */
 }
