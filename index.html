@@ -85,9 +85,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 	<hr>
 <!-- END -->
   
-<div id="inicioPaginador">	
   <!-- paginador -->
   <div class="w3-card-4 w3-margin w3-white">
+
     <div class="w3-container">
       <h3><b>Search in posts</b></h3> 
     </div>
@@ -398,7 +398,7 @@ function listadoBoton(inicio,fin) {
 
 	function myFunction(obj, index, array) {
 	  //txt += obj.titulo + '<br>';
-	  txt += '<li class="w3-padding-16" onclick="onePost('+obj.id+'); jump(\'inicioPaginador\')">'+
+	  txt += '<li class="w3-padding-16" onclick="onePost('+obj.id+'); jump(\'marcador\')">'+
 				  '<img src="img/theme/min/'+obj.tema+'.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">'+
 				  '<span class="w3-badge w3-green">'+obj.id+'</span>&nbsp;&nbsp;<span class="w3-large">'+obj.titulo+'</span><br>'+
 				  '<span>  Tema: '+themeArr[obj.tema]+ '  Fecha: '+obj.fecha_publicacion+'</span>'+
