@@ -1,0 +1,32 @@
+{
+  "events": [
+        {
+          date: new Date("2022-06-07"),
+          eventName: "Holiday",
+          text: "cumple ana",
+          className: "badge bg-danger",
+          onclick(e, data) {
+           alert(data.text);
+          },
+          dateColor: "red"
+        },
+        {
+          date: new Date("2022-06-07"),
+          eventName: "Holiday with wife",
+          className: "badge bg-danger",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red"
+        },
+        {
+          date: new Date("2022-06-11"),
+          eventName: "Working day",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "green"
+        }
+      ]
+}
