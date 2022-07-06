@@ -3,7 +3,7 @@
     {
       "id": 1,
       "activo": true,
-      "titulo": "Campeonato Autonómico en Sala 2001",
+      "titulo": "Campeonato Autonómico en Sala 2001", 
       "texto_corto": "<p>Arcoraspeig consigue tres campeonatos auton&oacute;micos</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "activo": true,
-      "titulo": "Campeonato de España 2001 de cadetes y menos de 14 años",
+      "titulo": "Campeonato de España 2001 de cadetes y menos de 14 años", 
       "texto_corto": "<p>Proximamente tendrá lugar este acontecimiento ...</p>",
       "texto_largo": "<h1>TEXTO_LARGO</h1><p><a href='https://es.lipsum.com/'>Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p><img src='https://www.w3schools.com/html/img_girl.jpg' alt='Girl in a jacket' width='500' height='600'></p><p>Como todos los a&ntilde;os nuestro club convoca a todos los arqueros al IX trofeo de San Vicente del Raspeig, que se celebrar&aacute; el proximo 3 de agosto a las 6 de la tarde.</p>",
       "autor": 2,
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "activo": true,
-      "titulo": "Programación en Linux I",
+      "titulo": "Programación en Linux I", 
       "texto_corto": "<p>Publicado en el BOE, por la que se convocan ayudas a las Federaciones Deportivas Españolas para el Programa Mujer y Deporte en el año 2022. ...</p>",
       "texto_largo": "<p>Charlotte Cooper realizó sus competencias con un vestido largo hasta los pies, cuello alto y corbata. La participación de las mujeres en el deporte y en los Juegos Olímpicos</p>",
       "autor": 2,
@@ -45,7 +45,7 @@
     {
       "id": 4,
       "activo": true,
-      "titulo": "Campeonato Nacional Absoluto 2001",
+      "titulo": "Campeonato Nacional Absoluto 2001", 
       "texto_corto": "<p>Arcoraspeig consigue tres campeonatos auton&oacute;micos</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -59,7 +59,7 @@
     {
       "id": 5,
       "activo": true,
-      "titulo": "Campeonato de España Junior 2001",
+      "titulo": "Campeonato de España Junior 2001", 
       "texto_corto": "<p>Proximamente tendrá lugar este acontecimiento ...</p>",
       "texto_largo": "<h1>TEXTO_LARGO</h1><p><a href='https://es.lipsum.com/'>Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p><img src='https://www.w3schools.com/html/img_girl.jpg' alt='Girl in a jacket' width='500' height='600'></p><p>Como todos los a&ntilde;os nuestro club convoca a todos los arqueros al IX trofeo de San Vicente del Raspeig, que se celebrar&aacute; el proximo 3 de agosto a las 6 de la tarde.</p>",
       "autor": 2,
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "activo": true,
-      "titulo": "Programación en Linux II",
+      "titulo": "Programación en Linux II", 
       "texto_corto": "<p>Publicado en el BOE, por la que se convocan ayudas a las Federaciones Deportivas Españolas para el Programa Mujer y Deporte en el año 2022. ...</p>",
       "texto_largo": "<p>Charlotte Cooper realizó sus competencias con un vestido largo hasta los pies, cuello alto y corbata. La participación de las mujeres en el deporte y en los Juegos Olímpicos</p>",
       "autor": 2,
@@ -83,11 +83,11 @@
       "fecha_publicacion": "2022-06-01",
       "tags": "Promocion, mujer",
       "tema": 1
-    },
+    }, 
     {
       "id": 7,
       "activo": true,
-      "titulo": "Campeonato Autonómico en Sala 2002",
+      "titulo": "Campeonato Autonómico en Sala 2002", 
       "texto_corto": "<p>Arcoraspeig consigue tres campeonatos auton&oacute;micos</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -101,7 +101,7 @@
     {
       "id": 8,
       "activo": true,
-      "titulo": "Campeonato de España 2002 de cadetes y menos de 14 años",
+      "titulo": "Campeonato de España 2002 de cadetes y menos de 14 años", 
       "texto_corto": "<p>Proximamente tendrá lugar este acontecimiento ...</p>",
       "texto_largo": "<h1>TEXTO_LARGO</h1><p><a href='https://es.lipsum.com/'>Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p><img src='https://www.w3schools.com/html/img_girl.jpg' alt='Girl in a jacket' width='500' height='600'></p><p>Como todos los a&ntilde;os nuestro club convoca a todos los arqueros al IX trofeo de San Vicente del Raspeig, que se celebrar&aacute; el proximo 3 de agosto a las 6 de la tarde.</p>",
       "autor": 2,
@@ -115,7 +115,7 @@
     {
       "id": 9,
       "activo": true,
-      "titulo": "Programación en Linux III",
+      "titulo": "Programación en Linux III", 
       "texto_corto": "<p>Publicado en el BOE, por la que se convocan ayudas a las Federaciones Deportivas Españolas para el Programa Mujer y Deporte en el año 2022. ...</p>",
       "texto_largo": "<p>Charlotte Cooper realizó sus competencias con un vestido largo hasta los pies, cuello alto y corbata. La participación de las mujeres en el deporte y en los Juegos Olímpicos</p>",
       "autor": 2,
@@ -129,7 +129,7 @@
     {
       "id": 10,
       "activo": true,
-      "titulo": "Campeonato Nacional Absoluto 2002",
+      "titulo": "Campeonato Nacional Absoluto 2002", 
       "texto_corto": "<p>Arcoraspeig consigue tres campeonatos auton&oacute;micos</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -143,7 +143,7 @@
     {
       "id": 11,
       "activo": true,
-      "titulo": "Campeonato de España Junior 2003",
+      "titulo": "Campeonato de España Junior 2003", 
       "texto_corto": "<p>Proximamente tendrá lugar este acontecimiento ...</p>",
       "texto_largo": "<h1>TEXTO_LARGO</h1><p><a href='https://es.lipsum.com/'>Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p><img src='https://www.w3schools.com/html/img_girl.jpg' alt='Girl in a jacket' width='500' height='600'></p><p>Como todos los a&ntilde;os nuestro club convoca a todos los arqueros al IX trofeo de San Vicente del Raspeig, que se celebrar&aacute; el proximo 3 de agosto a las 6 de la tarde.</p>",
       "autor": 2,
@@ -157,7 +157,7 @@
     {
       "id": 12,
       "activo": true,
-      "titulo": "Programación en Linux IV",
+      "titulo": "Programación en Linux IV", 
       "texto_corto": "<p>Publicado en el BOE, por la que se convocan ayudas a las Federaciones Deportivas Españolas para el Programa Mujer y Deporte en el año 2022. ...</p>",
       "texto_largo": "<p>Charlotte Cooper realizó sus competencias con un vestido largo hasta los pies, cuello alto y corbata. La participación de las mujeres en el deporte y en los Juegos Olímpicos</p>",
       "autor": 2,
@@ -167,11 +167,11 @@
       "fecha_publicacion": "2022-06-01",
       "tags": "Promocion, mujer",
       "tema": 1
-    },
-    {
+    }, 
+   {
       "id": 13,
       "activo": true,
-      "titulo": "Campeonato Autonómico en Sala 2003",
+      "titulo": "Campeonato Autonómico en Sala 2003", 
       "texto_corto": "<p>Arcoraspeig consigue tres campeonatos auton&oacute;micos</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -185,7 +185,7 @@
     {
       "id": 14,
       "activo": true,
-      "titulo": "Campeonato de España 2003 de cadetes y menos de 14 años",
+      "titulo": "Campeonato de España 2003 de cadetes y menos de 14 años", 
       "texto_corto": "<p>Proximamente tendrá lugar este acontecimiento ...</p>",
       "texto_largo": "<h1>TEXTO_LARGO</h1><p><a href='https://es.lipsum.com/'>Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p><img src='https://www.w3schools.com/html/img_girl.jpg' alt='Girl in a jacket' width='500' height='600'></p><p>Como todos los a&ntilde;os nuestro club convoca a todos los arqueros al IX trofeo de San Vicente del Raspeig, que se celebrar&aacute; el proximo 3 de agosto a las 6 de la tarde.</p>",
       "autor": 2,
@@ -199,7 +199,7 @@
     {
       "id": 15,
       "activo": true,
-      "titulo": "Programación en Python I",
+      "titulo": "Programación en Python I", 
       "texto_corto": "<p>Publicado en el BOE, por la que se convocan ayudas a las Federaciones Deportivas Españolas para el Programa Mujer y Deporte en el año 2022. ...</p>",
       "texto_largo": "<p>Charlotte Cooper realizó sus competencias con un vestido largo hasta los pies, cuello alto y corbata. La participación de las mujeres en el deporte y en los Juegos Olímpicos</p>",
       "autor": 2,
@@ -213,7 +213,7 @@
     {
       "id": 16,
       "activo": true,
-      "titulo": "Campeonato Autonómico en Sala 2004",
+      "titulo": "Campeonato Autonómico en Sala 2004", 
       "texto_corto": "<p>Arcoraspeig consigue tres campeonatos auton&oacute;micos</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -227,7 +227,7 @@
     {
       "id": 17,
       "activo": true,
-      "titulo": "Campeonato de España Junior 2004",
+      "titulo": "Campeonato de España Junior 2004", 
       "texto_corto": "<p>Proximamente tendrá lugar este acontecimiento ...</p>",
       "texto_largo": "<h1>TEXTO_LARGO</h1><p><a href='https://es.lipsum.com/'>Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p><img src='https://www.w3schools.com/html/img_girl.jpg' alt='Girl in a jacket' width='500' height='600'></p><p>Como todos los a&ntilde;os nuestro club convoca a todos los arqueros al IX trofeo de San Vicente del Raspeig, que se celebrar&aacute; el proximo 3 de agosto a las 6 de la tarde.</p>",
       "autor": 2,
@@ -241,7 +241,7 @@
     {
       "id": 18,
       "activo": true,
-      "titulo": "Programación en Python II",
+      "titulo": "Programación en Python II", 
       "texto_corto": "<p>Publicado en el BOE, por la que se convocan ayudas a las Federaciones Deportivas Españolas para el Programa Mujer y Deporte en el año 2022. ...</p>",
       "texto_largo": "<p>Charlotte Cooper realizó sus competencias con un vestido largo hasta los pies, cuello alto y corbata. La participación de las mujeres en el deporte y en los Juegos Olímpicos</p>",
       "autor": 2,
@@ -251,11 +251,11 @@
       "fecha_publicacion": "2022-06-01",
       "tags": "Programación, Python",
       "tema": 1
-    },
+    }, 
     {
       "id": 19,
       "activo": true,
-      "titulo": "Campeonato Autonómico en Sala 2005",
+      "titulo": "Campeonato Autonómico en Sala 2005", 
       "texto_corto": "<p>Arcoraspeig consigue tres campeonatos auton&oacute;micos</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -269,7 +269,7 @@
     {
       "id": 20,
       "activo": true,
-      "titulo": "Campeonato de España 2005 de cadetes y menos de 14 años",
+      "titulo": "Campeonato de España 2005 de cadetes y menos de 14 años", 
       "texto_corto": "<p>Proximamente tendrá lugar este acontecimiento ...</p>",
       "texto_largo": "<h1>TEXTO_LARGO</h1><p><a href='https://es.lipsum.com/'>Lorem Ipsum</a> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p><img src='https://www.w3schools.com/html/img_girl.jpg' alt='Girl in a jacket' width='500' height='600'></p><p>Como todos los a&ntilde;os nuestro club convoca a todos los arqueros al IX trofeo de San Vicente del Raspeig, que se celebrar&aacute; el proximo 3 de agosto a las 6 de la tarde.</p>",
       "autor": 2,
@@ -283,7 +283,7 @@
     {
       "id": 21,
       "activo": true,
-      "titulo": "Programación en Python III",
+      "titulo": "Programación en Python III", 
       "texto_corto": "<p>Publicado en el BOE, por la que se convocan ayudas a las Federaciones Deportivas Españolas para el Programa Mujer y Deporte en el año 2022. ...</p>",
       "texto_largo": "<p>Charlotte Cooper realizó sus competencias con un vestido largo hasta los pies, cuello alto y corbata. La participación de las mujeres en el deporte y en los Juegos Olímpicos</p>",
       "autor": 2,
@@ -297,7 +297,7 @@
     {
       "id": 22,
       "activo": true,
-      "titulo": "Campeonato Autonómico en Sala 2021. Ultimo post",
+      "titulo": "Campeonato Autonómico en Sala 2021. Ultimo post", 
       "texto_corto": "<p>Este es el último post publicado</p>",
       "texto_largo": "<p>El fin de semana pasado se celebr&oacute; en La Pobla del Vallbona el Campeonato Auton&oacute;mico de tiro con Arco en todas sus modalidades. </p>",
       "autor": 1,
@@ -307,20 +307,6 @@
       "fecha_publicacion": "2022-05-22",
       "tags": "Sala, recurvo, compuesto",
       "tema": 4
-    },
-    {
-      "id": 23,
-      "activo": true,
-      "titulo": "titulo del articulo 23",
-      "texto_corto": "texto corto del articulo 23",
-      "texto_largo": "texto largo del articulo 23",
-      "autor": "1",
-      "enlace_img": "https://web.ua.es/es/datos-old/acercade/imagenes/slidermasinfo/ua/sliderua.jpg",
-      "enlace_web": "https://www.sigua.ua.es",
-      "fecha_articulo": "2022-07-06",
-      "fecha_publicacion": "2022-07-06",
-      "tags": "Sala, recurvo, compuesto",
-      "tema": "1"
-    }
+    }          
   ]
 }
