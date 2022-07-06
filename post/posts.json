@@ -311,9 +311,9 @@
     {
       "id": 23,
       "activo": true,
-      "titulo": "titulo del articulo",
-      "texto_corto": "texto corto del articulo",
-      "texto_largo": "texto largo del articulo",
+      "titulo": "titulo del articulo 2",
+      "texto_corto": "texto corto del articulo 2",
+      "texto_largo": "texto largo del articulo 2",
       "autor": "1",
       "enlace_img": "https://web.ua.es/es/datos-old/acercade/imagenes/slidermasinfo/ua/sliderua.jpg",
       "enlace_web": "https://www.sigua.ua.es",
