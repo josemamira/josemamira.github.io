@@ -321,6 +321,20 @@
       "fecha_publicacion": "2022-07-07",
       "tags": "Sala, recurvo, compuesto",
       "tema": "1"
+    },
+    {
+      "id": 24,
+      "activo": true,
+      "titulo": "Post inventado",
+      "texto_corto": "<p>Este <strong>texto</strong> es para <em>ver</em> como es el <a href=\"www.ua.es\">ua</a> editado<br></p>",
+      "texto_largo": "<p>La costilla, sí, porque el pasado mes de marzo, precisamente frente a<strong> Taylor Fritz</strong>,\n en la final de Indian Wells, Nadal pudo constatar que padecía una \nfisura por estrés originada en la durísima semifinal frente a<strong> Carlos Alcaraz</strong>.\n Perdió la final, el primer partido de una temporada impoluta hasta ese \ninstante, y vio segado su rodaje para Roland Garros, dado que no pudo \ndisputar ni Montecarlo ni el Conde de Godó. Reapareció en Madrid, donde \nsólo jugó dos encuentros, cayendo en cuartos ante Alcaraz.</p>",
+      "autor": "1",
+      "enlace_img": "https://josemamira.github.io/img/avatar.jpg",
+      "enlace_web": "https://localhost/octokit/newpost.html",
+      "fecha_articulo": "2022-07-07",
+      "fecha_publicacion": "2022-07-07",
+      "tags": "Sala, recurvo, compuesto",
+      "tema": "2"
     }
   ]
 }
