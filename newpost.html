@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
     
     <script type="text/javascript" src="js/crypto-js.min.js"></script>
@@ -24,13 +25,13 @@
 	  <h3>Message</h3>
 	  <p>Click on button to autenticate</p>
 	</div>
-	<p class="w3-center"><button id="getToken" onclick="getToken()" class="w3-button w3-teal w3-round-large">Autenticate</button></p>
+	<p class="w3-center"><button id="getToken" onclick="getToken()" class="w3-button w3-teal w3-round-large"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Autenticate</button></p>
 
 
 
 	<div id="myForm" style="display:none" class="w3-container">
 		<p>
-		  <label for="id">Id:</label><input class="w3-input w3-border w3-round" type="text" id="id" readonly placeholder="id"><br>		 
+		  <label for="id">Id:</label><input class="w3-input w3-border w3-round" type="text" id="id" readonly placeholder="id"><br>
 		  <label for="active">Active:</label><input class="w3-check" id="active" name="active" type="checkbox" checked="checked"><br>
 		  <label for="titulo">Title:</label><input type="text"  class="w3-input w3-border w3-round" id="titulo" placeholder="Title of post"><br>
 		  <label for="texto_corto">Short text:</label><textarea id="texto_corto">texto corto</textarea><br>
@@ -62,18 +63,17 @@
 		  <input type="hidden" id="shavalue"><br>
 		  <input type="hidden" id="tokenValue">
 		</p>
-	    <p class="w3-center"><button id="upload" class="w3-button w3-teal w3-round-large">Upload Post</button></p> 
+	  <p class="w3-center"><button id="upload" class="w3-button w3-teal w3-round-large"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload Post</button></p> 
 	</div>
 </div>
 
 
-
-
-
 <script>
-	// textarea
+	
+// textarea
 $('#texto_corto').trumbowyg();	
-$('#texto_largo').trumbowyg();		
+$('#texto_largo').trumbowyg();	
+	
 // tiempo
 // Fecha hoy
 const hoy = new Date();
@@ -88,7 +88,7 @@ const formatear = f =>{
 document.querySelector("#fecha_articulo").value = formatear(hoy);
 document.querySelector("#fecha_publicacion").value = formatear(hoy)	
 	
-// Source:  https://stackoverflow.com/questions/24337317/encrypt-with-php-decrypt-with-javascript-cryptojs
+// https://stackoverflow.com/questions/24337317/encrypt-with-php-decrypt-with-javascript-cryptojs
 var CryptoJSAesJson = {
     stringify: function (cipherParams) {
         var j = {ct: cipherParams.ciphertext.toString(CryptoJS.enc.Base64)};
@@ -105,14 +105,14 @@ var CryptoJSAesJson = {
     }
 }
 
-// CALCULAR SHA1 PARA GITHUB: Hay que calcular el sha del fichero ya existente, no del modificado
+
+// CALCULAR SHA1 PARA GITHUB. Hay que calcular el sha del fichero ya existente, no del modificado
 
 
 let urlsha = 'https://api.github.com/repos/josemamira/josemamira.github.io/contents/post/posts.json';
 async function githubSha() {
             let response = await fetch(urlsha)
             let data = await response.json()
-            //console.log('valor sha = ' + data.sha);
             document.getElementById("shavalue").value = data.sha; 
             return data.sha;
     }
@@ -155,7 +155,7 @@ function getToken() {
 
 
 
-	  var url = 'https://josemamira.github.io/post/posts.json';
+	var url = 'https://josemamira.github.io/post/posts.json';
 
     var posts = getSomething();
 
@@ -173,7 +173,7 @@ function getToken() {
         return result;
     }
     
-    // Descomentar para test
+    // Decomentar para test
     //console.log(posts);
     //console.log("nº posts: " + posts.length);
     document.getElementById("id").value = posts.length;
@@ -195,6 +195,7 @@ function hideDiv() {
 	import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
 		
 	const main = async () => {
+			  //console.log(posts);		
 			  const numPost = Object.keys(posts).length;
 			  let unPost = {
 				  "id": numPost+1,
@@ -211,7 +212,8 @@ function hideDiv() {
 				  "tema": document.getElementById("tema").value
 				};
 			  posts.push(unPost);
-			  const postsJson={posts}; 
+			  const postsJson={posts};
+			  //console.log(posts);		  
 			  const postsJsonB64= utf8_to_b64(JSON.stringify({posts}, null, 2));
 			  let miToken = document.getElementById("tokenValue").value;
 			  const octokit = new Octokit({ auth: miToken });
