@@ -335,6 +335,20 @@
       "fecha_publicacion": "2022-07-07",
       "tags": "Sala, recurvo, compuesto",
       "tema": "2"
+    },
+    {
+      "id": 25,
+      "activo": true,
+      "titulo": "He terminado el proyecto de github",
+      "texto_corto": "<p>Ya puedo subir posts a Github<br></p>",
+      "texto_largo": "<p>Utilizando la famosa librería de Octokit, ajax y ...<br></p>",
+      "autor": "1",
+      "enlace_img": "https://josemamira.github.io/img/avatar.jpg",
+      "enlace_web": "www.ua.es",
+      "fecha_articulo": "2022-07-07",
+      "fecha_publicacion": "2022-07-07",
+      "tags": "Github",
+      "tema": "1"
     }
   ]
 }
