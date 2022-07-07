@@ -345,7 +345,7 @@ function makePagination() {
 		else {
 			//console.log('hay más de divisor(5). Paginar');
 			var bFin=''; 
-			if (resto < 0) {
+			if (resto == 0) {
 				//console.log('justo');
 				bFin=''; 
 			} else {
@@ -358,7 +358,7 @@ function makePagination() {
 			}
 			
 			var paginas = '';
-			for (var i = 1; i < numBot; i++) {
+			for (var i = 1; i <= numBot; i++) {
 				numIni = ((divisor*i)-divisor)+1;
 				numFin = divisor * i;
 				
