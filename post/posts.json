@@ -349,6 +349,20 @@
       "fecha_publicacion": "2022-07-07",
       "tags": "Github",
       "tema": "1"
+    },
+    {
+      "id": 26,
+      "activo": true,
+      "titulo": "La crisis en Ucrania",
+      "texto_corto": "<p>En este post analizaremos la guerra de Ucrania desde una perspectiva social.</p>",
+      "texto_largo": "<p>Obtenido de ElPais.com:</p><p><span style=\"color: rgb(25, 25, 25); font-family: MajritTxRoman, serif; font-size: 22px; letter-spacing: -0.01904px; background-color: rgb(255, 255, 255);\">El presidente ucranio, Volodímir Zelenski, ha celebrado este miércoles que el Ejército de Ucrania está infligiendo golpes “muy notorios” a las tropas rusas gracias a la ayuda de la artillería proporcionada por los países occidentales, y ha anunciado que las pérdidas de “los ocupantes solo aumentarán” a medida que pasen los días. “Finalmente, se siente que la artillería occidental, las armas que recibimos de nuestros socios, han trabajado muy poderosamente. Su precisión es exactamente como debería ser”, ha explicado el mandatario de Ucrania en su mensaje diario a la población. Según Zelenski, con las nuevas armas sus tropas están logrando reducir “significativamente” el potencial ofensivo ruso. En el terreno, fuerzas rusas han vuelto a atacar este jueves la&nbsp;</span><a href=\"https://elpais.com/internacional/2022-07-01/varios-muertos-en-un-bombardeo-de-rusia-contra-edificios-de-viviendas-en-la-region-ucrania-de-odesa.html\" target=\"_blank\" data-link-track-dtm=\"\" style=\"color: rgb(1, 108, 162); font-family: MajritTxRoman, serif; font-size: 22px; letter-spacing: -0.01904px; background-color: rgb(255, 255, 255);\">isla de las Serpientes</a><span style=\"color: rgb(25, 25, 25); font-family: MajritTxRoman, serif; font-size: 22px; letter-spacing: -0.01904px; background-color: rgb(255, 255, 255);\">, en el mar Negro, donde un muelle ha resultado dañado por el impacto de dos misiles. El pasado 30 de junio, Moscú confirmó la retirada de sus tropas de la isla, que había capturado al comienzo de la invasión. El objetivo del ataque, según ha denunciado el portavoz de la administración militar de Odesa, Serguéi Bratchuk, en Telegram, era retirar la bandera de Ucrania izada de nuevo sobre la isla hace unos días. Mientras, el alto representante de la Unión Europea para la Política Exterior, Josep Borrell, ha pedido este jueves al ministro de Exteriores chino, Wang Yi, que tenga un papel “más constructivo” y detenga la desinformación sobre el conflicto.</span><br></p>",
+      "autor": "1",
+      "enlace_img": "https://imagenes.elpais.com/resizer/QhF09leAU4Nnoh5V0vE_7FeqLVA=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/WJ6HW7TQVSVMYXEPUYRFTYUIKI.jpg",
+      "enlace_web": "https://elpais.com/internacional/2022-07-07/guerra-ucrania-rusia-ultima-hora-en-directo.html",
+      "fecha_articulo": "2022-07-07",
+      "fecha_publicacion": "2022-07-07",
+      "tags": "Sala, recurvo, compuesto",
+      "tema": "1"
     }
   ]
 }
