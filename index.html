@@ -296,6 +296,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 document.getElementById("popularPosts").style.display = "none";
 // listado temas
 const themeArr = ["Programación", "Deportes", "Variado","Música", "SIG","Cartografía", "Otros"];
+const authorArr = ["Jos&eacute; Manuel Mira", "Inmaculada Belmonte", "Paula Pira","Rubén Lira", "Sancho Panza","Alonso Quijano", "Javier Cercas"];	
 
 // Analizar la URL para obtener enlace a un artículo
 //comprueba si hay una url con el codigo del tipo http://localhost/index.html?id=3
@@ -319,10 +320,16 @@ makePagination();
 
 
 function makePagination() {
-	    var divisor = 5;
+	    //var divisor = 5;
 
 		//console.log(myData);
 		const numPost = myData.length;
+		if (numPost <= 50) { var divisor = 5; } 
+		else if (numPost > 50 && numPost <=100) { var divisor = 10; } 
+		else if (numPost > 100 && numPost <=200) { var divisor = 20; } 
+		else if (numPost > 200 && numPost <=500) { var divisor = 50; } 
+		else if (numPost > 500 && numPost <=1000) { var divisor = 100; }
+		else { var divisor = 100; }	
 		//console.log("nº: "+ numPost);
 		const numBot =numPost / divisor; // nº botones
 		//console.log(numBot);
@@ -428,7 +435,7 @@ function listadoBoton(inicio,fin) {
 					'<img src="img/theme/'+obj.tema+'.jpg" alt="Theme" style="width:100%">'+
 					'<div class="w3-container">'+
 						'<h3><b>'+obj.titulo+'</b></h3>'+
-						'<h5>TEM&Aacute;TICA: '+themeArr[obj.tema]+', <span class="w3-opacity">DATE '+obj.fecha_articulo+'</span></h5>'+
+						'<h5>THEME: <span class="w3-opacity">'+themeArr[obj.tema]+', </span>, DATE <span class="w3-opacity">'+obj.fecha_articulo+'</span>, AUTHOR: <span class="w3-opacity">'+authorArr[obj.autor]+'</span></h5>'+
 					'</div>	'+
 					'<div class="w3-container">'+
 						'<p>'+obj.texto_corto+'</p>'+
@@ -471,7 +478,7 @@ function listadoBoton(inicio,fin) {
 					'<img src="img/theme/'+obj.tema+'.jpg" alt="Theme" style="width:100%">'+
 					'<div class="w3-container">'+
 						'<h3><b>'+obj.titulo+'</b></h3>'+
-						'<h5>TEM&Aacute;TICA: '+themeArr[obj.tema]+', <span class="w3-opacity">DATE '+obj.fecha_articulo+'</span></h5>'+
+						'<h5>THEME: <span class="w3-opacity">'+themeArr[obj.tema]+', </span>, DATE <span class="w3-opacity">'+obj.fecha_articulo+'</span>, AUTHOR: <span class="w3-opacity">'+authorArr[obj.autor]+'</span></h5>'+
 					'</div>	'+
 					'<div class="w3-container">'+
 						'<p>'+obj.texto_corto+'</p>'+
@@ -525,7 +532,7 @@ function listadoBoton(inicio,fin) {
 					'<img src="img/theme/'+obj.tema+'.jpg" alt="Theme" style="width:100%">'+
 					'<div class="w3-container">'+
 						'<h3><b>'+obj.titulo+'</b></h3>'+
-						'<h5>TEM&Aacute;TICA: '+themeArr[obj.tema]+', <span class="w3-opacity">DATE '+obj.fecha_articulo+'</span></h5>'+
+						'<h5>THEME: <span class="w3-opacity">'+themeArr[obj.tema]+', </span>, DATE <span class="w3-opacity">'+obj.fecha_articulo+'</span>, AUTHOR: <span class="w3-opacity">'+authorArr[obj.autor]+'</span></h5>'+
 					'</div>	'+
 					'<div class="w3-container">'+
 						'<p>'+obj.texto_corto+'</p>'+
