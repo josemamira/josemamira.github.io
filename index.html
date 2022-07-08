@@ -336,7 +336,7 @@ function makePagination() {
 			//console.log('hay menos o igual a divisor (5)');
 			
 			for (var i = 1; i <= numPost; i++) {				
-				paginas += '<a  href="index.html?id='+i+'">'+i+'</a>';											
+				paginas += '<button class="w3-button w3-light-grey w3-border w3-hover-red" onclick="onePost('+i+'); jump(\'marcador\')">'+i+'</button>';												
 			}
 			paginador = '<div class="pagination">'+paginas+'</div>';
 			
