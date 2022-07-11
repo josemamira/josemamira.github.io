@@ -363,6 +363,20 @@
       "fecha_publicacion": "2022-07-07",
       "tags": "Sala, recurvo, compuesto",
       "tema": "1"
+    },
+    {
+      "id": 27,
+      "activo": true,
+      "titulo": "Post de pruebas para ver que tal",
+      "texto_corto": "<p>Lo mismo que el titulo&nbsp;Post de pruebas para ver que tal</p>",
+      "texto_largo": "<p>texto largo del articulo para probar&nbsp;</p>",
+      "autor": "1",
+      "enlace_img": "https://picsum.photos/300/200",
+      "enlace_web": "https://www.sigua.ua.es",
+      "fecha_articulo": "2022-07-11",
+      "fecha_publicacion": "2022-07-11",
+      "tags": "Sala, recurvo, compuesto",
+      "tema": "2"
     }
   ]
 }
