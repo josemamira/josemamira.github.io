@@ -377,6 +377,20 @@
       "fecha_publicacion": "2022-07-11",
       "tags": "Sala, recurvo, compuesto",
       "tema": "2"
+    },
+    {
+      "id": 28,
+      "activo": true,
+      "titulo": "otro intento, el 27",
+      "texto_corto": "<p>texto corto para el 27</p>",
+      "texto_largo": "<p>texto largo del articulo 27</p>",
+      "autor": "1",
+      "enlace_img": "https://picsum.photos/300/200",
+      "enlace_web": "www.sigua.ua.es",
+      "fecha_articulo": "2022-07-11",
+      "fecha_publicacion": "2022-07-11",
+      "tags": "Sala, recurvo, compuesto",
+      "tema": "2"
     }
   ]
 }
