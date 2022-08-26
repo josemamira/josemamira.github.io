@@ -333,7 +333,7 @@ if (res == "id=") {
 	var id_art = window.location.href.split( '?id=' )[1];
 	//alert('con id');
 	loadPost(id_art);
-	lastPost();
+	//lastPost();
 	
 } else {
 	//alert('sin id');
@@ -492,21 +492,14 @@ function listadoBoton(inicio,fin) {
 	function loadPost(id) {	
 		//id = 1;	
 		var url = 'https://josemamira.github.io/post/posts.json';
-		//$( "#divUnPost" ).empty();
 		$('#divBlogUltimo').empty();
 		$.getJSON(url, function(data) {
 			console.log(data);
 			// obtener nº de posts (length)
 			const numPost = Object.keys(data.posts).length;
 			console.log(numPost);
-			const obj = data.posts[id-1];
-			//const str = JSON.stringify(data);
-			//console.log(obj); 
-			//console.log(obj.titulo); 
-			//console.log(obj.tema);
-						
-			var divBlog = '';
-			
+			const obj = data.posts[id-1];					
+			var divBlog = '';			
 			divBlog += '<div class="w3-card-4 w3-margin w3-white">'+
 					'<img src="img/theme/'+obj.tema+'.jpg" alt="Theme" style="width:100%">'+
 					'<div class="w3-container">'+
