@@ -27,6 +27,15 @@
             console.log(data);
           },
           dateColor: "green"
+        },
+        {
+          date: new Date("2022-09-12"),
+          eventName: "Inicio curso académico en Cheste",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "green"
         }
       ]
 }
