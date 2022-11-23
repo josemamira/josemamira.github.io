@@ -391,6 +391,20 @@
       "fecha_publicacion": "2022-07-11",
       "tags": "Sala, recurvo, compuesto",
       "tema": "2"
+    },
+    {
+      "id": 29,
+      "activo": true,
+      "titulo": "Arco y fútbol",
+      "texto_corto": "<p>Comparativa de ambos deportes, o eso al menos de intentará</p><p><br></p>",
+      "texto_largo": "<p>Empieza el mundial de Qatar y con ello todos están con la selección, pero de arco nada de nada</p>",
+      "autor": "1",
+      "enlace_img": "",
+      "enlace_web": "www.sigua.ua.es",
+      "fecha_articulo": "2022-11-23",
+      "fecha_publicacion": "2022-11-23",
+      "tags": "Sala, recurvo, compuesto, fútbol",
+      "tema": "2"
     }
   ]
 }
