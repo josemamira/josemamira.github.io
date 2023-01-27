@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New post</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    
+  </head>
+  <body>
+	  hola <br>
+<script>
+$.ajax({
+  url: 'https://api.jsonbin.io/b/63d41fcdace6f33a22c9452b/1',
+  type: 'GET',
+  dataType: 'json',
+  beforeSend: function(xhr) {
+    $("#imagelodaing").show();
+    xhr.setRequestHeader("secret-key", "$2b$10$NbcBbge09sMN8yjVPsaDhujUZHGFMQWJNxA.iwAaFP0sbjw6qu.MC");
+  },
+  success: function(json) {
+	  console.log(json);
+    var j = 1;
+    json.siteList.forEach(function(data) {
+      data.deviceList.forEach(function(values) {
+        var time = (values.count * 25) / 60;
+        $('#data_table').append("<tr>" + "<td><input type='checkbox' class='checkbox' name='check' id='checked_box" + j + "' value='" + j + " 'onclick='get_checks(this)' ></td>" + "<td>" + data.siteName + "</td>" + "<td>" + values.deviceName + "</td>" + "<td>" + values.count + "</td>" + "<td>" + parseFloat(time).toFixed(2) + " Min" + "</td>" + "<input type='hidden' class='time' id='count' name='count[]' value=" + time + ">" + "</tr>");
+        if (values.status == "READY") {
+          $('#checked_box' + j + '').attr('disabled', true);
+          $('#checked_box' + j + '').closest("tr").addClass('table-active');
+        } else if (values.status == "IN PROGRESS") {
+          $('#checked_box' + j + '').attr('disabled', true);
+          $('#checked_box' + j + '').closest("tr").addClass('table-active');
+        }
+        j++
+      })
+    })
+  },
+  error: function() {
+    $("#imagelodaing").hide();
+  }
+});
+</script>
+<table id="data_table"></table>
+</body>
+</html>
