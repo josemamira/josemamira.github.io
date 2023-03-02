@@ -433,6 +433,20 @@
       "fecha_publicacion": "2023-02-06",
       "tags": "Sala, recurvo, compuesto",
       "tema": "2"
+    },
+    {
+      "id": 32,
+      "activo": true,
+      "titulo": "",
+      "texto_corto": "texto corto",
+      "texto_largo": "texto largo del articulo",
+      "autor": "1",
+      "enlace_img": "",
+      "enlace_web": "",
+      "fecha_articulo": "2023-03-02",
+      "fecha_publicacion": "2023-03-02",
+      "tags": "Sala, recurvo, compuesto",
+      "tema": "1"
     }
   ]
 }
