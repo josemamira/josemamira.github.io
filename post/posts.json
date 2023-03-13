@@ -433,6 +433,20 @@
       "fecha_publicacion": "2023-02-06",
       "tags": "Sala, recurvo, compuesto",
       "tema": "2"
+    },
+    {
+      "id": 32,
+      "activo": true,
+      "titulo": "Torneo Linares",
+      "texto_corto": "<p>Dentro de poco empezará el torneo</p>",
+      "texto_largo": "<p>No olvides apuntarte</p>\n<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/0/04/Anand_vs_Carlsen_Linares_2007.jpg\" alt=\"torneo\"></p>",
+      "autor": "1",
+      "enlace_img": "",
+      "enlace_web": "https://es.wikipedia.org/wiki/Torneo_Internacional_de_Ajedrez_Ciudad_de_Linares",
+      "fecha_articulo": "2023-03-13",
+      "fecha_publicacion": "2023-03-13",
+      "tags": "ajedrez",
+      "tema": "3"
     }
   ]
 }
