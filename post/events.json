@@ -1,9 +1,9 @@
 {
   "events": [
         {
-          date: new Date("2022-06-07"),
-          eventName: "Holiday",
-          text: "cumple ana",
+          date: new Date("2024-10-16"),
+          eventName: "Conferencia Esri España",
+          text: "Conferencia Esri España",
           className: "badge bg-danger",
           onclick(e, data) {
            alert(data.text);
