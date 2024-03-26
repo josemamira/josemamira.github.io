@@ -4,31 +4,31 @@
       "id": 1,
       "nombre": "Qgis",
       "web": "https://www.qgis.org/", 
-      "logo": "fvtacv.png"
+      "logo": "qgis.png"
     },
     {
       "id": 2,
       "nombre": "Instituto Geográfico Nacional",
       "web": "https://www.ign.es/web/ign/portal", 
-      "logo": "federarco.png"
+      "logo": "IGN.jpg"
     },
     {
       "id": 3,
       "nombre": "IDEV ",
       "web": "https://idev.gva.es/es", 
-      "logo": "ianseo.png"
+      "logo": "idev.png"
     },
     {
       "id": 4,
       "nombre": "Mapping GIS Blog",
       "web": https://mappinggis.com/", 
-      "logo": "world-archery.png"
+      "logo": "mappinggis.png"
     },
     {
       "id": 5,
       "nombre": "OpenStreetMap",
       "web": "https://www.openstreetmap.org/", 
-      "logo": "world-archery.png"
+      "logo": "osm.png"
     }        
   ]
 }
