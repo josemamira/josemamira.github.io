@@ -27,6 +27,20 @@
       "fecha_publicacion": "2024-03-26",
       "tags": "Webgis, Leaflet",
       "tema": 1
+    },
+    {
+      "id": 3,
+      "activo": true,
+      "titulo": "Leaflet y OpenStreetMap",
+      "texto_corto": "<p>A continuación podrás ver mis ensayos con la API de Leaflet y los datos de OpenStreetMap. El resultado ...</p>",
+      "texto_largo": "<p>El resultado fue un conjunto de mapas realizados con diferentes técnicas de publicación de cartografía usando Leaflet.</p><p>Más información <a href='https://josemamira.github.io/osmTestMap/'>aquí</a><p><p><img src='https://raw.githubusercontent.com/josemamira/osmTestMap/master/images/osm_banner.jpg' width='40%'></p>",
+      "autor": 1,
+      "enlace_img": "https://raw.githubusercontent.com/josemamira/osmTestMap/master/images/osm_banner.jpg",
+      "enlace_web": "https://github.com/josemamira/osmTestMap/tree/master",
+      "fecha_articulo": "2024-06-26",
+      "fecha_publicacion": "2024-06-26",
+      "tags": "OpenStreetMap, Leaflet",
+      "tema": 1
     }
   ]
 }
